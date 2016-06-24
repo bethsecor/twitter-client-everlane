@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+
+.banner {
+  display: inline-block
+}
+
+.banner-image {
+  width: 500px
+}
