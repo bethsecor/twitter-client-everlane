@@ -9,6 +9,7 @@ require 'vcr'
 require 'database_cleaner'
 require 'capybara/rails'
 require 'capybara/rspec'
+require 'mocha/setup'
 
 ActiveRecord::Migration.maintain_test_schema!
 

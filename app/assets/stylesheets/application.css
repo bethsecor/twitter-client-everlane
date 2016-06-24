@@ -14,8 +14,12 @@
  *= require_self
  */
 
+ #banners {
+   text-align: center;
+ }
+
 .banner {
-  display: inline-block
+  display: inline-block;
 }
 
 .banner-image {

@@ -16,7 +16,8 @@ class TwitterService
       req.params['user_id'] = user.uid
       req.headers['Authorization'] = friend_header_string
     end
-    parse(response)
+    parsed_response = parse(response)
+    parsed_response[:users] ? parsed_response[:users] : []
   end
 
   def friend_header_string

@@ -8,7 +8,7 @@ RSpec.feature "GuestCanLoginWithTwitters", type: :feature do
       click_on "Login with Twitter"
 
       expect(current_path).to eq('/banners')
-      expect(page).to have_content("Bird Banners for Miss Everlane")
+      expect(page).to have_content("Twitter Banners for Miss Everlane")
     end
   end
 end

@@ -1,0 +1,11 @@
+<h4><%= "Twitter Banners for #{current_user.name}" %></h4>
+<%= link_to "Logout", logout_path, method: :delete %>
+<br>
+
+<div id="banners">
+  <% @friends.each do |friend| %>
+    <div id="friend-<%= friend.id %>" class="banner">
+      <%= image_tag friend.profile_banner_url, class: "banner-image" %>
+    </div>
+  <% end %>
+</div>
